@@ -6,15 +6,28 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
 				"inputs": [
 					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "bidder",
+						"type": "address"
+					},
+					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "_biddingTime",
+						"name": "amount",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"name": "BidRefunded",
+				"type": "event"
 			},
 			{
 				"anonymous": false,
@@ -40,19 +53,6 @@
 				"name": "bid",
 				"outputs": [],
 				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "endTime",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -123,11 +123,11 @@
 	},
 	"sources": {
 		"Auction.sol": {
-			"keccak256": "0xc5dc400edae1498d52a221162056028168e07ceee42fea9a7a2b795a7a4892da",
+			"keccak256": "0x66842e2b368d15eefef2f0f04c6e2600f4751d42f0bcdcb26f25e9a1cc9acdf0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://74053decc8778bd1bc4e24a7cf7fba9c02dbd6fe7b32d76971598ba90ec5be5c",
-				"dweb:/ipfs/QmSvkW6N83r4aiCkrHUvvFFAvVHqoAPt6pLnjgE7VBzrx7"
+				"bzz-raw://eb26de4dd4c326fdfeaa6fe71c35179dc27ccdd2a9b85a42b9eecb2e27a12255",
+				"dweb:/ipfs/QmTv5nLikYKha32qbWsq3tENxjDtJ3n85Co6kjerikXiSo"
 			]
 		}
 	},
