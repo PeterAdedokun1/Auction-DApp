@@ -12,7 +12,6 @@ export default function AuctionDapp() {
   const { disconnect } = useDisconnect()
   const { data: walletClient } = useWalletClient()
   const { open } = useAppKit()
-  console.log(import.meta.env.VITE_CONTRACT_ADDRESS,1)
 
   const [highestBid, setHighestBid] = useState(0)
   const [highestBidder, setHighestBidder] = useState(null)
