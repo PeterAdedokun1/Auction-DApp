@@ -135,6 +135,7 @@ export default function AuctionDapp() {
         placeholder="Enter ETH amount"
         value={bidAmount}
         onChange={(e) => setBidAmount(e.target.value)}
+        style={{border: "none", outline: "1px solid gray", marginRight: 10, padding: 5, borderRadius: "5px"}}
       />
       <button onClick={placeBid} disabled={!isConnected || loading}>
         {loading ? "⏳ Processing..." : "Place Bid"}
