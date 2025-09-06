@@ -5,13 +5,14 @@ import { useAppKit } from "@reown/appkit/react"
 import auctionArtifact from "./auctionABI.json"
 
 const auctionABI = auctionArtifact.output.abi
-const CONTRACT_ADDRESS = "0xDA76aDa3B9eC3AE200A1945F103641A18f635763"
+const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS
 
 export default function AuctionDapp() {
   const { address, isConnected } = useAccount()
   const { disconnect } = useDisconnect()
   const { data: walletClient } = useWalletClient()
   const { open } = useAppKit()
+  console.log(import.meta.env.VITE_CONTRACT_ADDRESS,1)
 
   const [highestBid, setHighestBid] = useState(0)
   const [highestBidder, setHighestBidder] = useState(null)
